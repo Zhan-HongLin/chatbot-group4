@@ -182,7 +182,7 @@ class MyBot(ActivityHandler):
             # 書文的func
 
             # line address
-        elif ("{" in turn_context.activity.text and "}" in turn_context.activity.text):
+        elif ("{" in turn_context.activity.text and "}" in turn_context.activity.locale):
             line_address_json = json.loads(turn_context.activity.text)
             print('line_address_json', line_address_json)
             x = line_address_json['latitude']
@@ -205,7 +205,7 @@ class MyBot(ActivityHandler):
                                 CardAction(type="imBack",title="加入我的最愛",value=restaurants_dict[i]['name']+"_加入最愛")]
                             )
                     ))
-                    if(i==10):
+                    if(i==9):
                         break
 
                 message = MessageFactory.carousel(restaurants_list)                   
@@ -292,7 +292,7 @@ class MyBot(ActivityHandler):
                                     CardAction(type="imBack",title="加入我的最愛",value=restaurants_dict[i]['name']+"_加入最愛")]
                                 )
                         ))
-                        if(i==10):
+                        if(i==9):
                             break
 
                     message = MessageFactory.carousel(restaurants_list)                   
@@ -350,7 +350,7 @@ class MyBot(ActivityHandler):
               
                         
        
-                        if(i == 10):
+                        if(i == 9):
                             break
 
                     message = MessageFactory.carousel(restaurants_list)                   
