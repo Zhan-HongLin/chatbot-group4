@@ -1,4 +1,11 @@
-# echo-bot danny
+# 2021 Microsoft x TSMC careerhack : 美食公道伯--餐廳推薦聊天機器人
+
+## Using
+
+>Python, 
+>Microsoft Azure Service (LUIS, DB, QNA Maker),
+>API (GoogleMap, Line),
+>Web Crawler
 
 A bot that echoes back user response.
 
